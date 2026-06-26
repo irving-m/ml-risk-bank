@@ -1,0 +1,144 @@
+# =============================================================================
+# DATA FILES — never commit raw or processed data
+# =============================================================================
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.joblib
+
+# Keep folder structure without committing data
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/splits/.gitkeep
+
+# =============================================================================
+# MODEL ARTIFACTS
+# =============================================================================
+models/glm/*
+models/ml/*
+!models/glm/.gitkeep
+!models/ml/.gitkeep
+
+# =============================================================================
+# OUTPUTS
+# =============================================================================
+outputs/figures/*
+outputs/metrics/*
+outputs/presentation/*
+!outputs/figures/.gitkeep
+!outputs/metrics/.gitkeep
+!outputs/presentation/.gitkeep
+
+# =============================================================================
+# PYTHON TEMPORARY FILES
+# =============================================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+
+# =============================================================================
+# VIRTUAL ENVIRONMENTS
+# =============================================================================
+.env
+.venv
+env/
+venv/
+ENV/
+*.env
+
+# =============================================================================
+# JUPYTER NOTEBOOKS
+# =============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.nbconvert.py
+
+# =============================================================================
+# IDE & EDITOR
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursorrules
+
+# =============================================================================
+# OS FILES
+# =============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# LOGS & TEMP
+# =============================================================================
+*.log
+*.tmp
+*.bak
+logs/
+
+# =============================================================================
+# MLFLOW & EXPERIMENT TRACKING
+# =============================================================================
+mlruns/
+mlartifacts/
+mlflow/
+artifacts/
+outputs/mlflow/
+runs/
+
+# Specific MLflow files that can be noisy
+*.mlflow
+mlruns.db
+mlflow.db
+
+# TensorBoard / other experiment logs
+tensorboard/
+logs/tensorboard/
+events.out.tfevents*
+
+# Wandb (if you ever use it)
+wandb/
+
+# =============================================================================
+# MODEL ARTIFACTS
+# =============================================================================
+models/glm/*
+models/ml/*
+!models/glm/.gitkeep
+!models/ml/.gitkeep
+
+# =============================================================================
+# MLFLOW & EXPERIMENT TRACKING
+# =============================================================================
+mlruns/
+mlartifacts/
+mlflow/
+artifacts/
+outputs/mlflow/
+runs/
+
+*.mlflow
+mlruns.db
+mlflow.db
+
+# =============================================================================
+# OUTPUTS
+# =============================================================================
+outputs/figures/*
+outputs/metrics/*
+outputs/presentation/*
+!outputs/figures/.gitkeep
+!outputs/metrics/.gitkeep
+!outputs/presentation/.gitkeep
